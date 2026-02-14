@@ -9,7 +9,7 @@ export default function Home() {
             {/* Header */}
             <div className="flex flex-col gap-4">
               <h1 className="text-5xl font-bold tracking-tight text-black">
-                Shayan Arman
+                Paint Bros Vancouver
               </h1>
             </div>
 
@@ -18,8 +18,8 @@ export default function Home() {
               <p className="text-xl leading-relaxed text-gray-800 max-w-[600px]">
                 I love to build, ship, and scale. Since 2017, Ive engineered products at Apple and built an AI startup serving thousands worldwide. Currently building Zero Inbox, the first fully AI-powered email organizer.
               </p>
-              <Link 
-                href="mailto:shayan.arman2@gmail.com?subject=Project%20Inquiry&body=Hi%20Shayan%2C%0A%0AI%27d%20love%20to%20discuss%20a%20potential%20project.%0A%0APROJECT%20DETAILS%0A%0ACompany%2FProduct%20Name%3A%0A%0AWhat%20are%20you%20building%3F%0A%0ATimeline%20%26%20Budget%3A%0A%0ACurrent%20Stage%3A%0A%0AWhat%20do%20you%20need%20help%20with%3F" 
+              <Link
+                href="mailto:shayan.arman2@gmail.com?subject=Project%20Inquiry&body=Hi%20Shayan%2C%0A%0AI%27d%20love%20to%20discuss%20a%20potential%20project.%0A%0APROJECT%20DETAILS%0A%0ACompany%2FProduct%20Name%3A%0A%0AWhat%20are%20you%20building%3F%0A%0ATimeline%20%26%20Budget%3A%0A%0ACurrent%20Stage%3A%0A%0AWhat%20do%20you%20need%20help%20with%3F"
                 className="w-fit"
               >
                 <button className="cursor-pointer bg-black border-0 h-11 px-6 rounded-lg text-base font-medium text-white hover:bg-gray-800 transition-colors">
@@ -36,22 +36,22 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Results
               </h2>
-              
+
               <div className="flex flex-col gap-6">
-                <ResultItem 
-                  metric="10M+" 
+                <ResultItem
+                  metric="10M+"
                   description="Emails cleaned and organized by Zero Inbox AI"
                 />
-                <ResultItem 
-                  metric="10,000+" 
+                <ResultItem
+                  metric="10,000+"
                   description="Users worldwide across 50+ countries"
                 />
-                <ResultItem 
-                  metric="$18B" 
+                <ResultItem
+                  metric="$18B"
                   description="Revenue unlocked at Apple with first Siri AirPods experience"
                 />
-                <ResultItem 
-                  metric="100+" 
+                <ResultItem
+                  metric="100+"
                   description="Siri integrations shipped (WhatsApp, Tesla, Spotify, Uber)"
                 />
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Contact
               </h2>
-              
+
               <div className="flex flex-col gap-3">
                 <ContactLink href="mailto:shayan.arman2@gmail.com" text="Email" />
                 <ContactLink href="https://linkedin.com/in/shayan-arman" text="LinkedIn" />
@@ -85,7 +85,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Skills
               </h2>
-              
+
               <div className="flex flex-col gap-8">
                 <ServiceItem
                   title="AI Integration"
@@ -114,7 +114,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Highlights
               </h2>
-              
+
               <div className="flex flex-col gap-7">
                 <HighlightItem
                   title="Zero Inbox"
@@ -154,7 +154,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Experience
               </h2>
-              
+
               <div className="flex flex-col gap-6">
                 <ExperienceItem
                   company="Zero Inbox Technologies"
@@ -202,7 +202,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Education
               </h2>
-              
+
               <div className="flex flex-col gap-6">
                 <EducationItem
                   school="University of Waterloo"
@@ -233,7 +233,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Recognition
               </h2>
-              
+
               <div className="flex flex-col gap-5">
                 <AwardItem year="2025" title="Antler Fellow: Toronto Cohort" />
                 <AwardItem year="2024" title="New Ventures BC Top 26" />
@@ -253,7 +253,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Technical Skills
               </h2>
-              
+
               <div className="flex flex-col gap-5">
                 <SkillCategory
                   category="Languages"
@@ -290,7 +290,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Extraordinaire
               </h2>
-              
+
               <div className="flex flex-col gap-3">
                 <p className="text-base text-gray-600">Built in Vancouver, BC</p>
                 <p className="text-base text-gray-600">Made with Next.js & Mantine</p>
@@ -306,7 +306,7 @@ export default function Home() {
               <h2 className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
                 Copyright
               </h2>
-              
+
               <p className="text-base text-gray-600">©2017—2026 shayanarman.com</p>
               <p className="text-base text-gray-600">All rights reserved</p>
             </div>
@@ -344,14 +344,14 @@ function ServiceItem({ title, description }: { title: string; description: strin
   );
 }
 
-function HighlightItem({ 
-  title, 
-  period, 
+function HighlightItem({
+  title,
+  period,
   description,
-  url 
-}: { 
-  title: string; 
-  period: string; 
+  url
+}: {
+  title: string;
+  period: string;
   description: string;
   url?: string;
 }) {
@@ -372,15 +372,15 @@ function HighlightItem({
   );
 }
 
-function ExperienceItem({ 
-  company, 
-  period, 
-  role, 
+function ExperienceItem({
+  company,
+  period,
+  role,
   type,
-  tags 
-}: { 
-  company: string; 
-  period: string; 
+  tags
+}: {
+  company: string;
+  period: string;
   role: string;
   type: string;
   tags: string[];
@@ -397,14 +397,14 @@ function ExperienceItem({
   );
 }
 
-function EducationItem({ 
-  school, 
-  degree, 
+function EducationItem({
+  school,
+  degree,
   period,
-  details 
-}: { 
-  school: string; 
-  degree: string; 
+  details
+}: {
+  school: string;
+  degree: string;
   period: string;
   details: string;
 }) {
