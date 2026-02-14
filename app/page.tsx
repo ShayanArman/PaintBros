@@ -280,58 +280,7 @@ export default function Home() {
 
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Free Quote</h3>
-              <form
-                action="https://formspree.io/f/mvzbaokq"
-                method="POST"
-                className="space-y-4"
-              >
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
-                    placeholder="(123) 456-7890"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
-                  <textarea
-                    rows={4}
-                    name="message"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
-                    placeholder="Tell us about your project..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -412,37 +361,90 @@ function ContactInfo({ label, value, href }: { label: string; value: string; hre
   );
 }
 
+
 function ContactForm() {
   const [state, handleSubmit] = useForm("mvzbaokq");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p className="text-lg text-green-600 font-semibold">Thanks for reaching out! We'll get back to you soon.</p>;
   }
+
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-      />
-      <ValidationError
-        prefix="Email"
-        field="email"
-        errors={state.errors}
-      />
-      <textarea
-        id="message"
-        name="message"
-      />
-      <ValidationError
-        prefix="Message"
-        field="message"
-        errors={state.errors}
-      />
-      <button type="submit" disabled={state.submitting}>
-        Submit
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div>
+        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          required
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          placeholder="Your name"
+        />
+        <ValidationError
+          prefix="Name"
+          field="name"
+          errors={state.errors}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          placeholder="your@email.com"
+        />
+        <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          required
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          placeholder="(123) 456-7890"
+        />
+        <ValidationError
+          prefix="Phone"
+          field="phone"
+          errors={state.errors}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="project_details" className="block text-sm font-medium text-gray-700 mb-2">
+          Project Details
+        </label>
+        <textarea
+          id="project_details"
+          rows={4}
+          name="project_details"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          placeholder="Tell us about your project..."
+        />
+        <ValidationError
+          prefix="Project Details"
+          field="project_details"
+          errors={state.errors}
+        />
+      </div>
+
+      <button
+        type="submit"
+        disabled={state.submitting}
+        className="w-full bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors disabled:opacity-50"
+      >
+        Send Message
       </button>
     </form>
   );
