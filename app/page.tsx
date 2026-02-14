@@ -287,6 +287,7 @@ export default function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                   <input
                     type="text"
+                    name="name"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                     placeholder="Your name"
                   />
@@ -296,6 +297,7 @@ export default function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input
                     type="email"
+                    name="email"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                     placeholder="your@email.com"
                   />
@@ -305,6 +307,7 @@ export default function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
                   <input
                     type="tel"
+                    name="phone"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                     placeholder="(123) 456-7890"
                   />
@@ -314,6 +317,7 @@ export default function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
                   <textarea
                     rows={4}
+                    name="message"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                     placeholder="Tell us about your project..."
                   />
