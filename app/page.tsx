@@ -278,7 +278,11 @@ export default function Home() {
 
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Free Quote</h3>
-              <form className="space-y-4">
+              <form
+                action="https://formspree.io/f/mvzbaokq"
+                method="POST"
+                className="space-y-4"
+              >
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                   <input
