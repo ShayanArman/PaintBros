@@ -13,9 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Paint Bros Vancouver | Professional Painting & Home Renovation Services",
-  description: "Expert painting and home renovation services in Vancouver, BC. Interior & exterior painting, drywall repair, flooring, kitchen & bathroom renovations. Free quotes available.",
-  keywords: "painting vancouver, home renovation vancouver, interior painting, exterior painting, drywall repair vancouver, kitchen renovation, bathroom renovation, flooring vancouver",
+  title: "Paint Bros Vancouver",
+  description: "Painting and Home Renovations in Vancouver, BC, Canada",
 };
 
 export default function RootLayout({
