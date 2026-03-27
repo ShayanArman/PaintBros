@@ -222,7 +222,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gray-100 rounded-lg p-8">
+            <div className="bg-[var(--beige-bg)] rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">From Small Touch-Ups to Complete Makeovers</h3>
               <p className="text-gray-600 mb-6">
                 No project is too big or too small. Whether you need a quick refresh or a complete home
