@@ -2,7 +2,7 @@
 import type { ReactNode } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import { buttonShadow, crispShadow1px, zeroBlueOldButtonShadow } from "@/stylesHelpers";
+import { buttonShadow, crispShadow1px, zeroBlueOldButtonShadow, zeroBlueOldButtonShadowDark } from "@/stylesHelpers";
 
 function ActionButton({ href, children }: { href: string; children: ReactNode }) {
   return (
@@ -24,7 +24,16 @@ function ActionButton({ href, children }: { href: string; children: ReactNode })
 
 function AboutFeatureCheckmark() {
   return (
-    <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4" style={{ boxShadow: zeroBlueOldButtonShadow }}>
+    <div
+      className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4 transition-shadow"
+      style={{ boxShadow: zeroBlueOldButtonShadow }}
+      onMouseEnter={(event) => {
+        event.currentTarget.style.boxShadow = zeroBlueOldButtonShadowDark;
+      }}
+      onMouseLeave={(event) => {
+        event.currentTarget.style.boxShadow = zeroBlueOldButtonShadow;
+      }}
+    >
       <span className="text-white text-2xl font-bold">✓</span>
     </div>
   );
