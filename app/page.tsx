@@ -27,6 +27,14 @@ function ActionButton({ href, modifyOnMobile = false, children }: { href: string
   );
 }
 
+function HeroTitle() {
+  return (
+    <h2 className="text-3xl md:text-6xl font-bold text-gray-900 mb-6">
+      Professional Painting & Home Renovation Services in Vancouver
+    </h2>
+  );
+}
+
 function HeaderLogo() {
   return (
     <div className="flex items-center gap-2 sm:gap-3">
@@ -109,9 +117,7 @@ export default function Home() {
           <div aria-hidden="true" className="absolute inset-0 bg-white/72" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Professional Painting & Home Renovation Services in Vancouver
-              </h2>
+              <HeroTitle />
               <p className="text-xl md:text-2xl text-gray-800 mb-8">
                 Since 2014
               </p>
