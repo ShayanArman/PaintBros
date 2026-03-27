@@ -458,6 +458,9 @@ function ContactInfo({ label, value, href }: { label: string; value: string; hre
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mvzbaokq");
+  const fieldClassName =
+    "w-full px-4 py-2 rounded-lg border border-black placeholder:text-black focus:border-black focus:outline-none focus:ring-0";
+
   if (state.succeeded) {
     return <p className="text-lg text-green-600 font-semibold">Thanks for reaching out! We&apos;ll get back to you soon.</p>;
   }
@@ -471,7 +474,7 @@ function ContactForm() {
           type="text"
           name="name"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
+          className={fieldClassName}
           placeholder="Your name"
         />
         <ValidationError
@@ -488,7 +491,7 @@ function ContactForm() {
           type="email"
           name="email"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
+          className={fieldClassName}
           placeholder="your@email.com"
         />
         <ValidationError
@@ -505,7 +508,7 @@ function ContactForm() {
           type="tel"
           name="phone"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
+          className={fieldClassName}
           placeholder="(123) 456-7890"
         />
         <ValidationError
@@ -523,7 +526,7 @@ function ContactForm() {
           id="project_details"
           rows={4}
           name="project_details"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
+          className={fieldClassName}
           placeholder="Tell us about your project..."
         />
         <ValidationError
