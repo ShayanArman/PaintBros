@@ -25,7 +25,7 @@ function ActionButton({ href, children }: { href: string; children: ReactNode })
 function AboutFeatureCheckmark() {
   return (
     <div
-      className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4 transition-shadow"
+      className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4 cursor-pointer transition-shadow"
       style={{ boxShadow: zeroBlueOldButtonShadow }}
       onMouseEnter={(event) => {
         event.currentTarget.style.boxShadow = zeroBlueOldButtonShadowDark;
