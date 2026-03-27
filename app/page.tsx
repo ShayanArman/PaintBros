@@ -1,7 +1,26 @@
 'use client'
+import type { ReactNode } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { buttonShadow, crispShadow1px } from "@/stylesHelpers";
+
+function ActionButton({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a
+      href={href}
+      className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-[background-color,color,box-shadow]"
+      style={{ boxShadow: crispShadow1px }}
+      onMouseEnter={(event) => {
+        event.currentTarget.style.boxShadow = buttonShadow;
+      }}
+      onMouseLeave={(event) => {
+        event.currentTarget.style.boxShadow = crispShadow1px;
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
 export default function Home() {
   return (
@@ -33,7 +52,8 @@ export default function Home() {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
-              <div className="flex items-center">
+              <div className="flex items-center gap-[5px]">
+                <span aria-hidden="true" className="h-6 w-6 rounded-full bg-[var(--zero-red-darker)]" />
                 <h1 className="text-2xl font-bold text-white">Paint Bros Vancouver</h1>
               </div>
               <nav className="hidden md:flex space-x-8">
@@ -42,9 +62,7 @@ export default function Home() {
                 <a href="#services" className="text-white/90 hover:text-white transition-colors">Services</a>
                 <a href="#contact" className="text-white/90 hover:text-white transition-colors">Contact</a>
               </nav>
-              <a href="tel:7783874513" className="bg-white text-[var(--zi-deep-blue)] px-6 py-2 rounded-lg font-semibold hover:bg-sky-50 transition-colors">
-                Call Now
-              </a>
+              <ActionButton href="tel:7783874513">Call Now</ActionButton>
             </div>
           </div>
         </header>
@@ -67,19 +85,7 @@ export default function Home() {
                 >
                   Get Free Estimate
                 </a>
-                <a
-                  href="mailto:paintbros.reno@gmail.com"
-                  className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-[background-color,color,box-shadow]"
-                  style={{ boxShadow: crispShadow1px }}
-                  onMouseEnter={(event) => {
-                    event.currentTarget.style.boxShadow = buttonShadow;
-                  }}
-                  onMouseLeave={(event) => {
-                    event.currentTarget.style.boxShadow = crispShadow1px;
-                  }}
-                >
-                  Email Us
-                </a>
+                <ActionButton href="mailto:paintbros.reno@gmail.com">Email Us</ActionButton>
               </div>
             </div>
           </div>
@@ -311,7 +317,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="bg-[var(--beige-bg)] rounded-lg shadow-lg p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Free Quote</h3>
                 <ContactForm />
               </div>
@@ -423,7 +429,7 @@ function ContactForm() {
           type="text"
           name="name"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
           placeholder="Your name"
         />
         <ValidationError
@@ -440,7 +446,7 @@ function ContactForm() {
           type="email"
           name="email"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
           placeholder="your@email.com"
         />
         <ValidationError
@@ -457,7 +463,7 @@ function ContactForm() {
           type="tel"
           name="phone"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
           placeholder="(123) 456-7890"
         />
         <ValidationError
@@ -475,7 +481,7 @@ function ContactForm() {
           id="project_details"
           rows={4}
           name="project_details"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:ring-2 focus:ring-black focus:border-transparent"
           placeholder="Tell us about your project..."
         />
         <ValidationError

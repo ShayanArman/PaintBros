@@ -47,6 +47,9 @@
   --wood-grain-shadow: rgba(17, 17, 17, 0.18);
   --wood-grain-shadow-deep: rgba(0, 0, 0, 0.28);
 
+  /* Background */
+  --beige-bg: #e3d5ca;
+
   /* Typography */
   --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
