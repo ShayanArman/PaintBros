@@ -26,11 +26,11 @@ function ActionButton({ href, modifyOnMobile = false, children }: { href: string
   );
 }
 
-function HeaderLogo({ isMobile }: { isMobile: boolean }) {
+function HeaderLogo() {
   return (
     <div className="flex items-center gap-[5px]">
-      <span aria-hidden="true" className="h-6 w-6 rounded-full bg-[var(--zero-red-darker)]" />
-      <h1 className="text-2xl font-bold text-white">Paint Bros Vancouver</h1>
+      <span aria-hidden="true" className="h-6 w-6 rounded-full bg-white" />
+      <h1 className="text-lg font-bold text-white whitespace-nowrap sm:text-2xl">Paint Bros Vancouver</h1>
     </div>
   );
 }
