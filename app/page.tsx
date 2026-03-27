@@ -22,6 +22,14 @@ function ActionButton({ href, children }: { href: string; children: ReactNode })
   );
 }
 
+function AboutFeatureCheckmark() {
+  return (
+    <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+      <span className="text-white text-2xl font-bold">✓</span>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
@@ -95,7 +103,7 @@ export default function Home() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">About Us</h3>
+            <h3 className="text-sm font-semibold text-[var(--zero-blue)] uppercase tracking-wider mb-4">About Us</h3>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Paint Bros Vancouver</h2>
           </div>
 
@@ -108,25 +116,19 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl font-bold">✓</span>
-                </div>
+                <AboutFeatureCheckmark />
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Craftsmanship</h4>
                 <p className="text-gray-600">Quality work with attention to every detail</p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl font-bold">✓</span>
-                </div>
+                <AboutFeatureCheckmark />
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Reliability</h4>
                 <p className="text-gray-600">We show up when we say we will</p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl font-bold">✓</span>
-                </div>
+                <AboutFeatureCheckmark />
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Clean Work</h4>
                 <p className="text-gray-600">We work clean and respect your space</p>
               </div>
@@ -270,7 +272,7 @@ export default function Home() {
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Get In Touch</h3>
+                <h3 className="text-sm font-semibold text-[var(--zero-orange)] uppercase tracking-wider mb-4">Get In Touch</h3>
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">Contact Paint Bros Vancouver</h2>
                 <p className="text-lg text-gray-600 mb-8">
                   Ready to get your home painted, and renovated, looking like new today?
