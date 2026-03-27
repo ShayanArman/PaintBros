@@ -94,10 +94,10 @@ export default function Home() {
             <div className="flex justify-between items-center py-4">
               <HeaderLogo />
               <nav className="hidden md:flex space-x-8">
-                <a href="#home" className="text-white/90 hover:text-white transition-colors">Home</a>
-                <a href="#about" className="text-white/90 hover:text-white transition-colors">About Us</a>
-                <a href="#services" className="text-white/90 hover:text-white transition-colors">Services</a>
-                <a href="#contact" className="text-white/90 hover:text-white transition-colors">Contact</a>
+                <a href="#home" className="text-white/90 hover:text-[var(--zero-red-darker)] transition-colors">Home</a>
+                <a href="#about" className="text-white/90 hover:text-[var(--zero-red-darker)] transition-colors">About Us</a>
+                <a href="#services" className="text-white/90 hover:text-[var(--zero-red-darker)] transition-colors">Services</a>
+                <a href="#contact" className="text-white/90 hover:text-[var(--zero-red-darker)] transition-colors">Contact</a>
               </nav>
               <ActionButton modifyOnMobile={true} href="tel:7783874513">Call Now</ActionButton>
             </div>
