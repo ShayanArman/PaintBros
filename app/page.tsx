@@ -145,7 +145,7 @@ export default function Home() {
           <div aria-hidden="true" className="absolute inset-0 bg-white/86" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Our Services</h3>
+              <h3 className="text-sm font-semibold text-[var(--zero-red-darker)] uppercase tracking-wider mb-4">Our Services</h3>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">What We Offer</h2>
             </div>
 
