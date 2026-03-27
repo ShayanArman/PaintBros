@@ -202,12 +202,12 @@ export default function Home() {
               </p>
 
               <div className="space-y-4">
-                <FeatureItem text="Years of experience in painting and home improvements" />
-                <FeatureItem text="Locally owned and operated in Vancouver" />
-                <FeatureItem text="Free, no-obligation quotes" />
-                <FeatureItem text="Fully insured and professional team" />
-                <FeatureItem text="Clean, efficient work process" />
-                <FeatureItem text="Competitive pricing without compromising quality" />
+                <FeatureItem text="Years of experience in painting and home improvements" color={SERVICE_NUMBER_COLORS[0]} />
+                <FeatureItem text="Locally owned and operated in Vancouver" color={SERVICE_NUMBER_COLORS[1]} />
+                <FeatureItem text="Free, no-obligation quotes" color={SERVICE_NUMBER_COLORS[2]} />
+                <FeatureItem text="Fully insured and professional team" color={SERVICE_NUMBER_COLORS[3]} />
+                <FeatureItem text="Clean, efficient work process" color={SERVICE_NUMBER_COLORS[4]} />
+                <FeatureItem text="Competitive pricing without compromising quality" color={SERVICE_NUMBER_COLORS[5]} />
               </div>
             </div>
 
@@ -391,10 +391,10 @@ function ServiceCard({ number, title, description }: { number: string; title: st
   );
 }
 
-function FeatureItem({ text }: { text: string }) {
+function FeatureItem({ text, color }: { text: string; color: string }) {
   return (
     <div className="flex items-start">
-      <svg className="w-6 h-6 text-black mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6 mt-1 mr-3 flex-shrink-0" style={{ color }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
       </svg>
       <p className="text-gray-700">{text}</p>
