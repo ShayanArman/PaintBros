@@ -82,9 +82,7 @@ export default function Home() {
                 102deg,
                 transparent 0 18px,
                 var(--wood-grain-shadow) 18px 21px,
-                transparent 21px 42px,
-                var(--wood-grain-shadow-deep) 42px 44px,
-                transparent 44px 72px
+                transparent 21px 72px
               )
             `,
           }}
