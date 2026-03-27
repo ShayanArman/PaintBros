@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 743" role="img" aria-labelledby="paint-bros-logo-title paint-bros-logo-desc">
+  <title id="paint-bros-logo-title">Paint Bros &amp; Home Renovation Inc logo</title>
+  <desc id="paint-bros-logo-desc">Circular wordmark with crossed handles, a paint brush, since 2014 text, and a ring at the bottom.</desc>
+  <style>
+    .ink {
+      fill: #4a4a4a;
+      stroke: #4a4a4a;
+    }
+
+    .outer-letter,
+    .side-text {
+      fill: #4a4a4a;
+      font-family: "Arial Narrow Bold", "Helvetica Neue Condensed Bold", Impact, Haettenschweiler, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .outer-letter {
+      font-size: 76px;
+    }
+
+    .side-text {
+      font-size: 56px;
+      letter-spacing: 5px;
+    }
+  </style>
+  <rect width="750" height="743" fill="#ffffff"/>
+
+  <g aria-hidden="true">
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(288.78 375 372)">P</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(298.34 375 372)">A</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(307.90 375 372)">I</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(317.46 375 372)">N</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(327.02 375 372)">T</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(342.31 375 372)">B</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(351.87 375 372)">R</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(1.43 375 372)">O</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(10.99 375 372)">S</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(26.77 375 372)">&amp;</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(42.54 375 372)">H</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(52.10 375 372)">O</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(61.66 375 372)">M</text>
+    <text class="outer-letter" x="375" y="58" text-anchor="middle" dominant-baseline="middle" transform="rotate(71.22 375 372)">E</text>
+
+    <text class="outer-letter" x="124.86" y="561.81" text-anchor="middle" dominant-baseline="middle" transform="rotate(52.81 124.86 561.81)">R</text>
+    <text class="outer-letter" x="155.20" y="596.24" text-anchor="middle" dominant-baseline="middle" transform="rotate(44.43 155.20 596.24)">E</text>
+    <text class="outer-letter" x="190.24" y="625.89" text-anchor="middle" dominant-baseline="middle" transform="rotate(36.04 190.24 625.89)">N</text>
+    <text class="outer-letter" x="229.23" y="650.11" text-anchor="middle" dominant-baseline="middle" transform="rotate(27.66 229.23 650.11)">O</text>
+    <text class="outer-letter" x="271.32" y="668.39" text-anchor="middle" dominant-baseline="middle" transform="rotate(19.28 271.32 668.39)">V</text>
+    <text class="outer-letter" x="315.64" y="680.34" text-anchor="middle" dominant-baseline="middle" transform="rotate(10.90 315.64 680.34)">A</text>
+    <text class="outer-letter" x="361.22" y="685.70" text-anchor="middle" dominant-baseline="middle" transform="rotate(2.51 361.22 685.70)">T</text>
+    <text class="outer-letter" x="407.10" y="684.35" text-anchor="middle" dominant-baseline="middle" transform="rotate(-5.87 407.10 684.35)">I</text>
+    <text class="outer-letter" x="452.29" y="676.34" text-anchor="middle" dominant-baseline="middle" transform="rotate(-14.25 452.29 676.34)">O</text>
+    <text class="outer-letter" x="495.83" y="661.82" text-anchor="middle" dominant-baseline="middle" transform="rotate(-22.63 495.83 661.82)">N</text>
+    <text class="outer-letter" x="559.76" y="625.89" text-anchor="middle" dominant-baseline="middle" transform="rotate(-36.04 559.76 625.89)">I</text>
+    <text class="outer-letter" x="594.80" y="596.24" text-anchor="middle" dominant-baseline="middle" transform="rotate(-44.43 594.80 596.24)">N</text>
+    <text class="outer-letter" x="625.14" y="561.81" text-anchor="middle" dominant-baseline="middle" transform="rotate(-52.81 625.14 561.81)">C</text>
+  </g>
+
+  <line class="ink" x1="206" y1="167" x2="547" y2="542" stroke-width="9" stroke-linecap="square"/>
+  <line class="ink" x1="546" y1="167" x2="204" y2="544" stroke-width="9" stroke-linecap="square"/>
+
+  <text class="side-text" x="231" y="389" text-anchor="middle">SINCE</text>
+  <text class="side-text" x="562" y="389" text-anchor="middle">2014</text>
+
+  <g transform="translate(375 149)" aria-hidden="true">
+    <rect class="ink" x="-31" y="1" width="62" height="25"/>
+    <path class="ink" d="M -29 1 L -25 -5 L -20 1 L -15 -6 L -10 1 L -5 -5 L 0 1 L 5 -6 L 10 1 L 15 -5 L 20 1 L 25 -6 L 29 1 L 29 6 L -29 6 Z"/>
+    <rect class="ink" x="-38" y="28" width="76" height="23" rx="1"/>
+    <line x1="-38" y1="35" x2="38" y2="35" stroke="#ffffff" stroke-width="2"/>
+    <line x1="-38" y1="40" x2="38" y2="40" stroke="#ffffff" stroke-width="2"/>
+    <line x1="-38" y1="45" x2="38" y2="45" stroke="#ffffff" stroke-width="2"/>
+    <line x1="-38" y1="50" x2="38" y2="50" stroke="#ffffff" stroke-width="2"/>
+    <path class="ink" d="M -16 51 C -16 69, -7 74, -7 88 C -7 102, -13 114, -13 134 C -13 159, -8 184, 0 215 C 8 184, 13 159, 13 134 C 13 114, 7 102, 7 88 C 7 74, 16 69, 16 51 Z"/>
+    <circle cx="0" cy="116" r="3.8" fill="#ffffff"/>
+  </g>
+
+  <circle cx="375" cy="510" r="41" fill="none" stroke="#4a4a4a" stroke-width="11"/>
+</svg>

@@ -1,5 +1,6 @@
 'use client'
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { useForm, ValidationError } from '@formspree/react';
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { buttonShadow, crispShadow1px, zeroBlueOldButtonShadow, zeroBlueOldButtonShadowDark } from "@/stylesHelpers";
@@ -29,7 +30,14 @@ function ActionButton({ href, modifyOnMobile = false, children }: { href: string
 function HeaderLogo() {
   return (
     <div className="flex items-center gap-[5px]">
-      <span aria-hidden="true" className="h-6 w-6 rounded-full bg-white" />
+      <Image
+        src="/paint-bros-logo.svg"
+        alt=""
+        aria-hidden="true"
+        width={24}
+        height={24}
+        className="h-6 w-6 shrink-0"
+      />
       <h1 className="text-lg font-bold text-white whitespace-nowrap sm:text-2xl">Paint Bros Vancouver</h1>
     </div>
   );
