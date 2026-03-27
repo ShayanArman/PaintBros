@@ -194,7 +194,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Our Promise</h3>
+              <h3 className="text-sm font-semibold text-[var(--zero-blue-old)] uppercase tracking-wider mb-4">Our Promise</h3>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">We Don&apos;t Stop Until You Love the Results</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Clients choose us because we combine craftsmanship with reliability. Our services are tailored
