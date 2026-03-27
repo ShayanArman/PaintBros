@@ -30,14 +30,15 @@ function ActionButton({ href, modifyOnMobile = false, children }: { href: string
 function HeaderLogo() {
   return (
     <div className="flex items-center gap-[5px]">
-      <Image
-        src="/paint-bros-logo.svg"
-        alt=""
-        aria-hidden="true"
-        width={24}
-        height={24}
-        className="h-6 w-6 shrink-0"
-      />
+      <span aria-hidden="true" className="flex h-6 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+        <Image
+          src="/paint-bros-logo.svg"
+          alt=""
+          width={24}
+          height={24}
+          className="h-full w-full object-cover"
+        />
+      </span>
       <h1 className="text-lg font-bold text-white whitespace-nowrap sm:text-2xl">Paint Bros Vancouver</h1>
     </div>
   );
