@@ -68,7 +68,7 @@ export default function Home() {
                 </a>
                 <a
                   href="mailto:paintbros.reno@gmail.com"
-                  className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-gray-900 hover:bg-gray-50 transition-colors"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-gray-900 hover:bg-[var(--zero-red-darker)] hover:text-white hover:border-[var(--zero-red-darker)] transition-colors"
                 >
                   Email Us
                 </a>
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               At Paint Bros & Home Renovation, we believe every home deserves to look its best – inside and out.
-              We're a locally owned business with years of experience in painting, remodeling, and home improvements.
+              We&apos;re a locally owned business with years of experience in painting, remodeling, and home improvements.
               From small touch-ups to complete makeovers, we bring skill, care, and attention to detail to every project.
             </p>
 
@@ -119,8 +119,8 @@ export default function Home() {
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed mt-12 text-center">
-              Your home is more than walls and floors – it's where life happens.
-              Let's make it a place you're proud to show off.
+              Your home is more than walls and floors – it&apos;s where life happens.
+              Let&apos;s make it a place you&apos;re proud to show off.
             </p>
           </div>
         </div>
@@ -181,10 +181,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Our Promise</h3>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">We Don't Stop Until You Love the Results</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">We Don&apos;t Stop Until You Love the Results</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Clients choose us because we combine craftsmanship with reliability. Our services are tailored
-                to fit your vision and budget, and we're committed to delivering exceptional results every time.
+                to fit your vision and budget, and we&apos;re committed to delivering exceptional results every time.
               </p>
 
               <div className="space-y-4">
@@ -231,7 +231,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Home?</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Contact us today for a free quote and let's discuss how we can bring your vision to life.
+            Contact us today for a free quote and let&apos;s discuss how we can bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -261,7 +261,7 @@ export default function Home() {
                 <p className="text-lg text-gray-600 mb-8">
                   Ready to get your home painted, and renovated, looking like new today?
                   Reach out to us for a free consultation and quote.
-                  We're here to answer all your questions and help you plan your perfect home improvement.
+                  We&apos;re here to answer all your questions and help you plan your perfect home improvement.
                 </p>
 
                 <div className="space-y-4">
@@ -403,7 +403,7 @@ function ContactInfo({ label, value, href }: { label: string; value: string; hre
 function ContactForm() {
   const [state, handleSubmit] = useForm("mvzbaokq");
   if (state.succeeded) {
-    return <p className="text-lg text-green-600 font-semibold">Thanks for reaching out! We'll get back to you soon.</p>;
+    return <p className="text-lg text-green-600 font-semibold">Thanks for reaching out! We&apos;ll get back to you soon.</p>;
   }
 
   return (
