@@ -1,7 +1,7 @@
 'use client'
 import { useForm, ValidationError } from '@formspree/react';
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import { crispShadow1px } from "@/stylesHelpers";
+import { buttonShadow, crispShadow1px } from "@/stylesHelpers";
 
 export default function Home() {
   return (
@@ -69,8 +69,14 @@ export default function Home() {
                 </a>
                 <a
                   href="mailto:paintbros.reno@gmail.com"
-                  className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-colors"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-[background-color,color,box-shadow]"
                   style={{ boxShadow: crispShadow1px }}
+                  onMouseEnter={(event) => {
+                    event.currentTarget.style.boxShadow = buttonShadow;
+                  }}
+                  onMouseLeave={(event) => {
+                    event.currentTarget.style.boxShadow = crispShadow1px;
+                  }}
                 >
                   Email Us
                 </a>
