@@ -4,11 +4,15 @@ import { useForm, ValidationError } from '@formspree/react';
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { buttonShadow, crispShadow1px, zeroBlueOldButtonShadow, zeroBlueOldButtonShadowDark } from "@/stylesHelpers";
 
-function ActionButton({ href, children }: { href: string; children: ReactNode }) {
+function ActionButton({ href, modifyOnMobile = false, children }: { href: string; modifyOnMobile: boolean; children: ReactNode }) {
+  const className = modifyOnMobile
+    ? "inline-flex items-center justify-center shrink-0 whitespace-nowrap bg-white text-gray-900 px-4 py-3 rounded-2xl text-base leading-none font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-[background-color,color,box-shadow] sm:px-8 sm:py-4 sm:rounded-lg sm:text-lg sm:leading-normal"
+    : "bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-[background-color,color,box-shadow]";
+
   return (
     <a
       href={href}
-      className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--zero-red-darker)] hover:text-white transition-[background-color,color,box-shadow]"
+      className={className}
       style={{ boxShadow: crispShadow1px }}
       onMouseEnter={(event) => {
         event.currentTarget.style.boxShadow = buttonShadow;
@@ -19,6 +23,15 @@ function ActionButton({ href, children }: { href: string; children: ReactNode })
     >
       {children}
     </a>
+  );
+}
+
+function HeaderLogo({ isMobile }: { isMobile: boolean }) {
+  return (
+    <div className="flex items-center gap-[5px]">
+      <span aria-hidden="true" className="h-6 w-6 rounded-full bg-[var(--zero-red-darker)]" />
+      <h1 className="text-2xl font-bold text-white">Paint Bros Vancouver</h1>
+    </div>
   );
 }
 
@@ -69,17 +82,14 @@ export default function Home() {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
-              <div className="flex items-center gap-[5px]">
-                <span aria-hidden="true" className="h-6 w-6 rounded-full bg-[var(--zero-red-darker)]" />
-                <h1 className="text-2xl font-bold text-white">Paint Bros Vancouver</h1>
-              </div>
+              <HeaderLogo />
               <nav className="hidden md:flex space-x-8">
                 <a href="#home" className="text-white/90 hover:text-white transition-colors">Home</a>
                 <a href="#about" className="text-white/90 hover:text-white transition-colors">About Us</a>
                 <a href="#services" className="text-white/90 hover:text-white transition-colors">Services</a>
                 <a href="#contact" className="text-white/90 hover:text-white transition-colors">Contact</a>
               </nav>
-              <ActionButton href="tel:7783874513">Call Now</ActionButton>
+              <ActionButton modifyOnMobile={true} href="tel:7783874513">Call Now</ActionButton>
             </div>
           </div>
         </header>
@@ -102,7 +112,7 @@ export default function Home() {
                 >
                   Get Free Estimate
                 </a>
-                <ActionButton href="mailto:paintbros.reno@gmail.com">Email Us</ActionButton>
+                <ActionButton modifyOnMobile={false} href="mailto:paintbros.reno@gmail.com">Email Us</ActionButton>
               </div>
             </div>
           </div>
