@@ -1,6 +1,8 @@
 export const crispShadow1px = "0 2px 5px 0 rgba(50,50,93,.1),0 1px 1px 0 rgba(0,0,0,.07)";
 export const wideShadow2px = '0 1px 1px 0 rgba(50,50,93,.3),0 1px 5px 0 rgba(0,0,0,.2)';
 export const buttonShadow = "0 2px 5px 0 rgba(50,50,93,.1),0 5px 5px 0 rgba(0,0,0,.07)";
+export const zeroBlueOldButtonShadow = "0 0 18px 0 color-mix(in srgb, var(--zero-blue-old) 35%, transparent),0 0 23px 0 color-mix(in srgb, var(--zero-blue-old) 22%, transparent)";
+export const zeroRedButtonShadow = "0 0 18px 0 color-mix(in srgb, var(--zero-red) 35%, transparent),0 0 23px 0 color-mix(in srgb, var(--zero-red) 22%, transparent)";
 
 export const containerStyle = {
   borderRadius: "15px",
