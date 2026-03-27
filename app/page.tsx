@@ -29,13 +29,16 @@ function ActionButton({ href, modifyOnMobile = false, children }: { href: string
 
 function HeaderLogo() {
   return (
-    <div className="flex items-center gap-[5px]">
-      <span aria-hidden="true" className="flex h-6 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+    <div className="flex items-center gap-2 sm:gap-3">
+      <span
+        aria-hidden="true"
+        className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white sm:h-12 sm:w-12"
+      >
         <Image
           src="/paint-bros-logo.svg"
           alt=""
-          width={24}
-          height={24}
+          width={128}
+          height={128}
           className="h-full w-full object-cover"
         />
       </span>
