@@ -83,7 +83,7 @@ export default function Home() {
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Professional Painting & Home Renovation Services in Vancouver
               </h2>
-              <p className="text-xl md:text-2xl text-gray-600 mb-8">
+              <p className="text-xl md:text-2xl text-gray-800 mb-8">
                 Since 2014
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
