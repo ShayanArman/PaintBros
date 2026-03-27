@@ -44,6 +44,8 @@
   --wood-mid-tone: #815e4b;
   --wood-light-tone: #8b6149;
   --wood-warm-highlight: #aea292;
+  --wood-grain-shadow: rgba(17, 17, 17, 0.18);
+  --wood-grain-shadow-deep: rgba(0, 0, 0, 0.28);
 
   /* Typography */
   --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;

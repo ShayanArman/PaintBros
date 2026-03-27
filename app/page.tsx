@@ -13,7 +13,23 @@ export default function Home() {
 
       <div className="relative z-10">
         {/* Header/Navigation */}
-        <header className="bg-[var(--wood-average-tone)] shadow-lg sticky top-0 z-50">
+        <header
+          className="shadow-lg sticky top-0 z-50"
+          style={{
+            backgroundColor: "var(--wood-average-tone)",
+            backgroundImage: `
+              linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.08) 100%),
+              repeating-linear-gradient(
+                102deg,
+                transparent 0 18px,
+                var(--wood-grain-shadow) 18px 21px,
+                transparent 21px 42px,
+                var(--wood-grain-shadow-deep) 42px 44px,
+                transparent 44px 72px
+              )
+            `,
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               <div className="flex items-center">
@@ -337,11 +353,23 @@ export default function Home() {
 }
 
 // Component Helpers
+const SERVICE_NUMBER_COLORS = [
+  "var(--zero-blue-old)",
+  "var(--zero-blue)",
+  "var(--zi-hero)",
+  "var(--zero-red)",
+  "var(--zero-red-darker)",
+  "var(--zero-orange)",
+];
+
 function ServiceCard({ number, title, description }: { number: string; title: string; description: string }) {
+  const colorIndex = Math.max(Number.parseInt(number, 10) - 1, 0) % SERVICE_NUMBER_COLORS.length;
+  const numberColor = SERVICE_NUMBER_COLORS[colorIndex] ?? "var(--zero-blue)";
+
   return (
     <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
       <div className="flex items-center mb-4">
-        <span className="text-4xl font-bold text-gray-200 mr-3">{number}</span>
+        <span className="text-4xl font-bold mr-3" style={{ color: numberColor }}>{number}</span>
         <h3 className="text-xl font-bold text-gray-900">{title}</h3>
       </div>
       <p className="text-gray-600 leading-relaxed">{description}</p>
